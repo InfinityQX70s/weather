@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:colorPrimary">@color/PrimaryColor</item>
+        <item name="android:colorPrimaryDark">@color/PrimaryDarkColor</item>
+    </style>
+
+    <style name="ExtendTextViewStyle">
+        <item name="custom_font">Roboto-Thin</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="ExtendTextViewStyleForTable">
+        <item name="custom_font">Roboto-Light</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="TableHighTextViewStyle">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="TableLowTextViewStyle" parent="TableHighTextViewStyle">
+        <item name="android:textColor">#ffaca9a7</item>
+    </style>
+
+    <style name="TableImageStyle" parent="TableHighTextViewStyle">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:src">@drawable/na</item>
+    </style>
+
+
+</resources>

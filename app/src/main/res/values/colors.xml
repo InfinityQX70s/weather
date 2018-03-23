@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="PrimaryColor">#2196F3</color>
+    <color name="PrimaryDarkColor">#1976D2</color>
+
+    <color name="TransperentPrimaryColor">#002196F3</color>
+    <color name="blue">#fffd4444</color>
+    <color name="purple">#9933CC</color>
+    <color name="green">#669900</color>
+    <color name="orange">#FF8800</color>
+
+    <color name="test_color">#33ffffff</color>
+</resources>

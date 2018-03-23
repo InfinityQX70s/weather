@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/splash_image"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/splash_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="60sp"
+        android:text="Weather"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:paddingTop="70dp"/>
+
+</FrameLayout>
