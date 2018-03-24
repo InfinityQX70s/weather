@@ -1,7 +1,9 @@
 package com.infinity.weather;
 
+import android.database.MatrixCursor;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.provider.BaseColumns;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -9,7 +11,10 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.CursorAdapter;
 import android.widget.ImageView;
+import android.widget.SearchView;
+import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
 import com.db.chart.Tools;
@@ -302,10 +307,10 @@ public class MainActivity extends RoboSpiceActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
+//        int id = item.getItemId();
+//        if (id == R.id.action_search) {
+//            return true;
+//        }
         return super.onOptionsItemSelected(item);
     }
 

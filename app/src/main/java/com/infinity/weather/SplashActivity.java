@@ -120,7 +120,9 @@ public class SplashActivity extends RoboSpiceActivity {
             else
                 mLatLongRequest = new LatitudeLongitudeRequest(locationl.getLatitude(), locationl.getLongitude());
             //TODO: woeid по широте и долготе
-            getSpiceManager().execute(mLatLongRequest, new LatLongRequestListener());
+//            getSpiceManager().execute(mLatLongRequest, new LatLongRequestListener());
+            WeatherRequest mWeatherRequest = new WeatherRequest("moskow"); //TODO: погода по woeid
+            getSpiceManager().execute(mWeatherRequest, new WeatherRequestListener());
         }
     }
 

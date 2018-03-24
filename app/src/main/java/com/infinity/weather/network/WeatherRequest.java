@@ -22,7 +22,7 @@ public class WeatherRequest extends RetrofitSpiceRequest<Weather,WeatherAPI> {
     @Override
     public Weather loadDataFromNetwork() throws Exception {
         Map<String, String> params = new HashMap<String, String>();
-        params.put("q", "select * from weather.forecast where woeid ="+mWoeid);
+        params.put("q", "select * from weather.forecast where woeid in (select woeid from geo.places(1) where text=\"" + mWoeid +"\")");
         params.put("format", "json");
         return getService().getWeatherInform(params);
     }
